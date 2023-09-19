@@ -13,6 +13,10 @@ Customer feedback plays a pivotal role in the service industry, and Disneyland, 
 Dataset is available on Kaggle at the following link :
 https://www.kaggle.com/datasets/arushchillar/disneyland-reviews.
 
+### Data Preparation :
+
+We began by cleaning the dataset, retaining 40K reviews (18K - California, 12K - Paris, 9K - Hong Kong), excluding rows with missing Year_Month entries. We then parsed "Year" and "Month," grouping them into "Seasons" (Fall, Winter, Spring, Summer). Several preprocessing step were performed including sentence-to-word tokenization, stemming, stop word and common word removal, iteratively enhancing data quality.
+
 ### Analysis and Insights :
 #### Identifying Key topics mentioned in positive and negative customer reviews : 
 Performed separate branch-wise analyses using a 1 to 5 rating scale, categorizing reviews as Negative (1-3) and Positive (4-5). Employing LDA topic modeling, we extracted distinct topics from Positive feedback, indicating customer-attracting themes, and Negative feedback, identifying issues potentially detrimental to the business.
